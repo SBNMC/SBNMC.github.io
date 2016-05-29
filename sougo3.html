@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+     .clearfix::after{
+      content:"";
+      width: 0;
+      height: 0;
+      font-size:0;
+      display: block;
+      clear: both;
+    }
+    .sougo{
+      width: 1000px;
+      margin: 10px auto;
+      position: relative;
+    }
+    .logo{
+      width: 193px;
+      height: 40px;
+      background: url('http://dl.pinyin.sogou.com/index/header/logo.png');
+      float: left;
+    }
+   
+    .search{
+      width: 325px;
+      height: 32px;
+      /*background: url('http://dl.pinyin.sogou.com/index/header/search_box.png');*/ 
+      float: right;
+    }
+    .sougo .search #key{
+      width:280px;
+      height:27px;
+      outline: none;
+      border: 1px solid #eee;
+      text-indent:10px;
+     float:left;
+    }
+    .sougo .search #key:focus{
+      border: 1px solid #FC6B2D;
+    }
+    .sougo .search #btn{
+      float:left;
+      width:30px;
+      height:30px;
+      text-indent: -9999em;
+      border:none;
+      outline:none;
+      background:url('http://dl.pinyin.sogou.com/index/header/search_box.png');
+      background-position: -293px 0;
+     
+    }
+    .menu{
+      width:100%;
+      height:40px;
+      background:#FC6B2D;
+    
+     }
+    .menuStyle{
+       width: 1000px;
+        margin: 0 auto;
+        padding:0;
+    }
+    
+   .menu li {
+        list-style-type: none;
+     
+    }
+    
+    
+    .menu li a{
+      float:left;
+      padding:11px 20px;
+      margin: 0 20px 0 0;
+      position:relative;
+      
+     }
+   .menu li .btn,
+    .menu li a:hover{
+       background: #e94f0d;
+    }
+    .menu li a{
+      text-decoration:none;
+      color:#fff;
+    }
+   .menu li  #new::after{
+      width:26px;
+      height:14px;
+      background:url('http://dl.pinyin.sogou.com/index/2.0/new.png');
+      top:-16px;
+      left:63px;
+     position:absolute;
+    }
+    .vb{
+      height:400px;
+      background: url('http://dl.pinyin.sogou.com/index/2.0/banner_8.0.2.jpg') center;
+    }
+    .vb .banner{
+      width:1000px;
+      height:400px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .vb .banner .fan{
+      position:absolute;
+      top:262px;
+      left:574px;
+    }
+    .vb .banner .jin{
+      position:absolute;
+      top:262px;
+      left:760px;
+    }
+    .vb .banner .kin{
+      position:absolute;
+      top:292px;
+      left:574px;
+    }
+    .hhh{
+      position: absolute;
+      right:200px;
+      bottom:346px;
+      width:89px;
+      height:89px;
+      background: url('http://dl.pinyin.sogou.com/index/2.0/mobile_qrcode_7.7.png');
+      }
+    .ddd{
+      position: absolute;
+      right:200px;
+      bottom:316px;
+     width: 90px;
+    height: 22px;
+    background: url("http://dl.pinyin.sogou.com/index/2.0/btn_down_mobile_8.0.1.png");
+    
+     
+    }
+    .DownloadIcon{
+    position: absolute;
+    left: 790px;
+    bottom:310px;
+     }
+    .DownloadIcon a{
+      display: inline-block;
+      width:241px;
+      height:60px;
+      background:url('http://dl.pinyin.sogou.com/index/2.0/btn_down_one_8.0.1.png');
+    text-indent:-9999em;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="sougo clearfix">
+    <div class="logo"></div>
+    <div class="search">
+      <input type="text" name="key" id="key">
+      <input type="submit" id="btn" value="搜索">
+    </div>
+  </div>
+  <div class="menu">
+    <div class="menuStyle">
+      <ul>
+        <li>
+          <a class="btn" href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">皮肤</a>
+        </li>
+        <li>
+          <a href="#">词库</a>
+        </li>
+        <li id="new">
+          <a href="#">字媒体</a>
+        </li>
+        <li>
+          <a href="#">帮助</a>
+        </li>
+        <li>
+          <a href="#">升级日志</a>
+        </li>
+        <li>
+          <a href="#">论坛</a>
+        </li>
+      </ul>
+    </div>
+  </div>  
+
+  <div class="vb">
+    <div class="banner">
+      <div class="fan">更新日期：2016-05-13</div>
+      <div class="jin">
+        <a href="#">新版特征</a>
+      </div>
+        <div class="kin">支持：XP / WIN7 / WIN8 / WIN10</div>
+       </div>
+    <div class="hhh"></div>
+    <div class="ddd">
+      <a href="">
+      </a></div>
+    <div class="DownloadIcon ">
+      <a href="#">立即下载</a>
+    </div> 
+  </div>
+</body>
+</html>

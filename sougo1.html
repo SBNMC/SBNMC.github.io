@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+     .clearfix::after{
+      content:"";
+      width: 0;
+      height: 0;
+      font-size:0;
+      display: block;
+      clear: both;
+    }
+    .sougo{
+      width: 1000px;
+      margin: 10px auto;
+      position: relative;
+    }
+    .logo{
+      width: 193px;
+      height: 40px;
+      background: url('http://dl.pinyin.sogou.com/index/header/logo.png');
+      float: left;
+    }
+    .search{
+      width: 325px;
+      height: 32px;
+      background: url('http://dl.pinyin.sogou.com/index/header/search_box.png');
+      float: right;
+    }
+    .vb{
+      height:400px;
+      background: url('http://dl.pinyin.sogou.com/index/2.0/banner_8.0.2.jpg') center;
+    }
+    .DownloadIcon{
+      width: 240px;
+      height: 60px;
+      display: inline-block;
+      background: url('http://dl.pinyin.sogou.com/index/2.0/btn_down_one_8.0.1.png')top left;
+      position: absolute;
+      right:140px;
+      top:300px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="sougo clearfix">
+    <div class="logo"></div>
+    <div class="search"></div>
+
+  </div>
+  <div class="vb">
+    <div class="DownloadIcon">
+      <a class="btn" href="#"></a>
+    </div>
+  </div>
+</body>
+</html>
