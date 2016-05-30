@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,50 +11,47 @@
       display: block;
       clear: both;
     }
-    .body{
-      margin:0;
+    body{
+      margin: 0;
     }
-    .sougo{
+    .top{
       width: 1000px;
       margin: 10px auto;
       position: relative;
     }
-    .logo{
+    .top .logo{
       width: 193px;
       height: 40px;
       background: url('http://dl.pinyin.sogou.com/index/header/logo.png');
       float: left;
     }
-   
-    .search{
+    .top .search{
       width: 325px;
       height: 32px;
-      /*background: url('http://dl.pinyin.sogou.com/index/header/search_box.png');*/ 
       float: right;
     }
-    .sougo .search #key{
-      width:280px;
-      height:27px;
-      outline: none;
-      border: 1px solid #eee;
-      text-indent:10px;
-     float:left;
+    .top .search #key{
+        width: 290px;
+        height: 26px;
+        outline: none;
+        border: 1px solid #eee;
+        text-indent: 10px;
+        float: left;    
     }
-    .sougo .search #key:focus{
+    .top .search #key:focus {
       border: 1px solid #FC6B2D;
     }
-    .sougo .search #btn{
-      float:left;
-      width:30px;
-      height:30px;
-      text-indent: -9999em;
-      border:none;
-      outline:none;
-      background:url('http://dl.pinyin.sogou.com/index/header/search_box.png');
-      background-position: -293px 0;
-     
+    .top .search #bth{
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-indent: -9999em;
+        border: none;
+        outline: none;
+        background: url("http://dl.pinyin.sogou.com/index/header/search_box.png");
+        background-position: -294px 0;
     }
-   .menuCon {
+    .menuCon {
         width: 100%;
         height: 40px;
         background-color: #FC6B2D;
@@ -91,7 +87,8 @@
         color: #fff;
         text-decoration: none;
     }
-    .vb{
+    
+        .vb{
       height:400px;
       background: url('http://dl.pinyin.sogou.com/index/2.0/banner_8.0.2.jpg') center;
     }
@@ -118,7 +115,7 @@
     }
     .hhh{
       position: absolute;
-      right:200px;
+      right:300px;
       bottom:346px;
       width:89px;
       height:89px;
@@ -126,7 +123,7 @@
       }
     .ddd{
       position: absolute;
-      right:200px;
+      right:300px;
       bottom:316px;
      width: 90px;
     height: 22px;
@@ -136,7 +133,7 @@
     }
     .DownloadIcon{
     position: absolute;
-    left: 790px;
+    left: 872px;
     bottom:310px;
      }
     .DownloadIcon a{
@@ -145,8 +142,8 @@
       height:60px;
       background:url('http://dl.pinyin.sogou.com/index/2.0/btn_down_one_8.0.1.png');
     text-indent:-9999em;
+    
     }
-   
     .content{
       width:1000px;
       margin: 0 auto;
@@ -264,18 +261,17 @@
     .gongneng li:nth-child(6) #dixia:hover{
         background-position: -380px -23px;
     }
-  
   </style>
 </head>
 <body>
-  <div class="sougo clearfix">
+  <div class="top clearfix">
     <div class="logo"></div>
     <div class="search">
-      <input type="text" name="key" id="key">
-      <input type="submit" id="btn" value="搜索">
-    </div>
+        <input type="text" name="key" id="key">
+        <input type="submit" id="bth" value="搜索">
+    </div>   
   </div>
- <div class="menuCon">
+  <div class="menuCon">
         <ul class="menu clearfix">
             <li class="act">
                 <a href="">首页</a>
@@ -300,8 +296,8 @@
             </li>
         </ul>
     </div>
-
-  <div class="vb">
+   
+   <div class="vb">
     <div class="banner">
       <div class="fan">更新日期：2016-05-13</div>
       <div class="jin">
@@ -317,7 +313,8 @@
       <a href="#">立即下载</a>
     </div> 
   </div>
-  <div class="content clearfix">
+</body>
+<div class="content clearfix">
     <div class="main">
       <div class="skin">
         <div class="title"></div>
@@ -452,6 +449,4 @@
   </div>
     </div>
   </div>
-  
-</body>
 </html>
